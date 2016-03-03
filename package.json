@@ -2,13 +2,17 @@
   "name": "freeboard",
   "title": "freeboard",
   "version": "1.1.3",
+  "scripts": {
+    "start": "http-server & node server.js & sleep 3 && open http://localhost:8080/#source=dashboard.json"
+  },
   "devDependencies": {
     "grunt": "0.4.1",
     "grunt-contrib-concat": "0.1.3",
     "grunt-contrib-cssmin": "0.6.1",
-    "grunt-contrib-watch": "0.5.3",
     "grunt-contrib-uglify": "0.6.0",
-    "grunt-string-replace": "^0.2.7"
+    "grunt-contrib-watch": "0.5.3",
+    "grunt-string-replace": "^0.2.7",
+    "http-server": "^0.9.0"
   },
   "dependencies": {
     "socket.io": "^1.4.5"
